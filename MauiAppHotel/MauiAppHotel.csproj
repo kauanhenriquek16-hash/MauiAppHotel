@@ -59,7 +59,10 @@
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 		
 		<!-- Custom Fonts -->
-		<MauiFont Include="Resources\Fonts\*" />
+		<MauiFont Include="Resources\Fonts\Arimo-Italic-VariableFont_wght.ttf" />
+		<MauiFont Include="Resources\Fonts\Arimo-VariableFont_wght.ttf" />
+		<MauiFont Include="Resources\Fonts\OpenSans-Regular.ttf" />
+		<MauiFont Include="Resources\Fonts\OpenSans-Semibold.ttf" />
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
@@ -68,6 +71,18 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Sobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
