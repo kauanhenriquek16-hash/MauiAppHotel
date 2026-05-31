@@ -75,7 +75,7 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked_1" />
+                <Button Text="Avançar" Clicked="Button_Clicked" />
 
                 <Button Text="Sobre o app"
                         Margin="0, 10, 0, 0"
